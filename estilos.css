@@ -1,0 +1,251 @@
+#encabezado{
+	width: 100%;
+	height: 100px;
+	margin:auto;
+}
+#menu{
+    text-align: center;
+	width: 100%;
+	height: 50px;
+	background: #6ac2b9;
+	margin:auto;
+}
+
+#menu ul{
+    list-style: none;
+    display: inline-block;
+    padding:5px;
+
+}
+
+#cuerpo{
+	width: 1200px;
+	height: 500px;
+	margin:auto;
+}
+#pie{
+	width: 100%;
+	height: 150px;
+	margin:auto;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    list-style-type: none;
+    color: #fff;
+    text-align: center;
+    font-size: medium; 
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  
+  #logo {
+      text-align: center;
+  }
+
+  #logo img{
+    max-height:200px;
+    min-height:10%;
+    width:500px;
+    padding: 12px;
+  }
+
+  #parrafo{
+	width: 500px;
+	height: auto;
+	float: right;
+	margin:20px;
+
+}
+
+
+
+#somos{
+    width: 500px;
+	height: auto;
+	float: left;
+	margin:20px;
+    
+
+}
+#somos img{
+    width: 400px;
+    height: auto;
+    float: right;
+  
+    
+}
+
+#cuerpo2{
+    width: 1200px;
+	height: auto;
+	margin:auto;
+}
+
+
+#cuerpo3{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+	height: auto;
+	margin:auto;
+    background-image: url(imagenes/galeria/4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#contactForm {
+	width: 500px;
+    margin-top: 30px;
+        border: 1px solid #CCC;
+        padding: 15px 15px 15px 15px;
+        background-color: #fff;
+        margin: auto;
+}
+#contactForm * {
+	font-family: sans-serif;
+	display: block;
+	box-sizing: border-box;
+ 
+}
+#contactForm label {
+	color: #333;
+	cursor: default;
+	margin: 15px 0 3px 0;
+}
+#contactForm input[type="text"], #contactForm input[type="email"], #contactForm textarea {
+	padding: 8px;
+	border: 1px solid #CCC;
+	color: #555;
+	font-size: 1em;
+	width: 100%;
+	overflow: hidden;
+	resize: none;
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+#contactForm input[type="text"]:focus, #contactForm input[type="email"]:focus, #contactForm textarea:focus {
+	outline: none;
+	box-shadow: 0px 0px 5px #007DD7;
+	-o-box-shadow: 0px 0px 5px #007DD7;
+	-ms-box-shadow: 0px 0px 5px #007DD7;
+	-moz-box-shadow: 0px 0px 5px #007DD7;
+}
+#contactForm .caracteres, #contactForm label[for="descripcion"] {
+	display: inline-block;
+}
+#contactForm .caracteres {
+	color: green;
+}
+#contactForm #comprueba {
+	margin: 10px 0;
+	float: left;
+}
+#contactForm #comprueba p {
+	display: inline-block;
+	color: #333;
+	margin: 0;
+}
+#contactForm #comprueba #n1, #contactForm #comprueba #n2 {
+	display: inline-block;
+	width: 20px !important;
+	border: none !important;
+	padding: 0 !important;
+	margin: 0;
+	text-align: center;
+}
+#contactForm #comprueba #n1:focus, #contactForm #comprueba #n2:focus {
+	box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#contactForm #comprueba #res {
+	display: inline-block;
+	width: 25px;
+	padding: 2px;
+}
+#contactForm #comprueba #res:focus {
+	box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#contactForm #enviar {
+	border: 1px solid #0169A9;
+	cursor: pointer;
+	float: right;
+	background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	-o-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	-ms-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	-moz-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	color: #FFF;
+	font-size: 1em;
+	margin: 10px 0 10px 15px;
+	padding: 3px 9px;
+	border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+#contactForm #enviar:hover {
+	background: linear-gradient(#0275BB,#008DE4,#08A1FF);
+	-o-background: linear-gradient(#0275BB,#008DE4,#08A1FF);
+	-ms-background: linear-gradient(#0275BB,#008DE4,#08A1FF);
+	-moz-background: linear-gradient(#0275BB,#008DE4,#08A1FF);
+}
+#contactForm #enviar[disabled] {
+	background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	-o-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	-ms-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	-moz-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	cursor: default;
+}
+#contactForm #respuesta {
+	display: none;
+	padding: 6px;
+	background: #008DE4;
+	color: #FFF;
+	text-align: center;
+	margin: 10px 0;
+	border: 1px solid #0076BE;
+	cursor: pointer;
+	border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+#creditos{
+    text-align: justify;
+    padding: 30px 30px 30px 30px;
+}
+
+#postcreditos{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}

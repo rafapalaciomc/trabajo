@@ -1,0 +1,203 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Enfermera en Casa</title>
+    <script src="calculadora.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="ajax.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="estilos.css">
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+$('#myInput').trigger('focus')})
+</script>
+</head>
+<body>
+	<div id="encabezado">
+        <div id="logo">
+            <a href="index.html" ><img src="logo.png" alt=""></a>
+
+
+        </div>
+    
+    </div>
+	<div id="menu">
+        <ul >
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
+            <li><a data-bs-toggle="modal" data-bs-target="#exampleModal">COTICE SU SERVICIO</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+          </ul>
+
+
+    </div>
+    <div id ="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="slide/slide-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="slide/slide-2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+<div id="cuerpo">
+    <div id="nosotros" style="text-align: center; padding-top: 60px;">
+
+        <h1>
+            Somos enfermeras
+            <small class="text-muted">Somos profesionales</small>
+          </h1>
+    </div>
+    <div id="somos">
+        <img src="imagenes/departments-1.jpg" alt="">
+    </div>
+    <div id="parrafo">
+        <p style="text-align: justify; font-size: 20px; padding-right: 100px;">Somos un grupo de profesionales que deseamos brindar el mejor servicio de acompañamiento y cuidado a personas que lo requieran<br>
+            A traves de herramientas y procedimientos en casa para evitar traslados e icomodiddes, en medio de una situación que ha cambiado 
+            nuestra forma de vivir e interactura.... somos la solución</p></br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Cotizar Servicio
+              </button>
+            
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cotizar Servicios</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Cotizador-->
+            <form name="calc">
+                <label>Inyecciones al mes: </label><input type="number"  name="operando1" size="12"></br>
+                <label>Tomas de presión al mes: </label><input type="number"  name="operando2" size="12"></br>
+       
+                
+                
+                </form>
+                        </div>
+        <div class="modal-footer">
+            <label>Valor Total: $</label><input type="number" name="resultado" value="0" size="12" >
+
+            <input type="button" class="btn btn-primary"    name="" value="Calcular" size="12" onclick="calcula('+')">
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+
+   <div></div>
+    
+        
+</div>
+
+ 
+<div id="cuerpo2">
+    <div id="equipo" style="text-align: center; margin-top: 60px;" >
+        <h1>
+            Nuestro
+            <small class="text-muted">Equipo</small>
+          </h1>
+          <ul style="margin-top: 30px;">
+          <li><img style="width: 300px; height: auto;" src="imagenes/enfermeras/doctors-1.jpg" class="img-thumbnail" alt="..."></li>
+          <li><img style="width: 300px; height: auto;" src="imagenes/enfermeras/doctors-1.jpg" class="img-thumbnail" alt="..."></li>
+          <li><img style="width: 300px; height: auto;" src="imagenes/enfermeras/doctors-1.jpg" class="img-thumbnail" alt="..."></li>
+          <li><img style="width: 300px; height: auto;" src="imagenes/enfermeras/doctors-1.jpg" class="img-thumbnail" alt="..."></li>
+
+
+        </ul>
+
+    </div>
+</div>
+
+<div id="equipo" style="text-align: center; margin-top: 60px;" >
+    <h1>
+        Estamos 
+        <small class="text-muted">para servirte</small>
+      </h1>
+
+    <p>Envíanos un mensaje</p>
+
+<div id="cuerpo3">
+
+
+
+        <form id="contactForm">
+            <label for="email">Tu Email:</label>
+		<input type="email" id="email" name="email" placeholder="Ingrese su correo.">
+		<label for="nombre">Tu Nombre:</label>
+		<input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre.">
+		<label for="asunto">Asunto:</label>
+		<input type="text" id="asunto" name="asunto" placeholder="Breve descripción del mensaje">
+		<label for="descripcion">Descripción del mensaje:</label>
+		<span class="caracteres">Tamaño máximo 500 letras</span>
+		<textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Escriba el mensaje detalladamente. 
+Le responderemos al email de contacto lo antes posible."></textarea>
+		<div id="comprueba">
+			<p>Comprobación Anti Spam: </p>
+			<input type="text" id="n1" name="n1" readonly> + <input type="text" id="n2" name="n2" readonly>
+			=
+			<input type="text" id="res" name="res" maxlength="2">
+		</div>
+		<input type="submit" class="btn btn-primary" value="Enviar">
+		<div style="clear:both"></div>
+		<div id="respuesta"></div>
+
+
+
+        </form>
+
+
+
+
+
+</div>
+
+    
+
+
+</div>	
+
+<div id="pie">
+ <div id="creditos">
+
+    <p style="float: left;">
+        Enfermera en Casa</br>
+        Calle 26 39 75, Barrio el Poblado</br>
+        PBX: (4) 590 45 80</br>
+        Medellín - Colombia</p>
+    </br>
+
+  </div>
+
+</div>
+
+<div id="postcreditos">
+    <p>Todos los derechos reservados - 2021©</p>
+    <p style="font-size: 15px; ">Desarrollado por Rafael Palacio</p>
+</div>
+
+
+
+
+</body>
+</html>
