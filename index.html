@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Enfermera en Casa</title>
-    <script src="calculadora.js"></script>
+    
 <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="ajax.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -12,6 +12,7 @@
     $('#myModal').on('shown.bs.modal', function () {
 $('#myInput').trigger('focus')})
 </script>
+<script src="calculadora.js"></script>
 </head>
 <body>
 	<div id="encabezado">
@@ -26,7 +27,7 @@ $('#myInput').trigger('focus')})
         <ul >
             <li><a href="index.html">INICIO</a></li>
             <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
-            <li><a data-bs-toggle="modal" data-bs-target="#exampleModal">COTICE SU SERVICIO</a></li>
+            <li><a href="cotizar.html">COTICE SU SERVICIO</a></li>
             <li><a href="#contact">CONTACTO</a></li>
           </ul>
 
@@ -87,15 +88,15 @@ $('#myInput').trigger('focus')})
             <form name="calc">
                 <label>Inyecciones al mes: </label><input type="number"  name="operando1" size="12"></br>
                 <label>Tomas de presión al mes: </label><input type="number"  name="operando2" size="12"></br>
-       
+                <div class="modal-footer">
+                  <label>Valor Total: $</label><input type="number" name="resultado" value="0" size="12" >
+      
+                  <input type="button" class="btn btn-primary"    name="" value="+" size="12" onclick="calcula('+')">
+      
                 
                 
                 </form>
                         </div>
-        <div class="modal-footer">
-            <label>Valor Total: $</label><input type="number" name="resultado" value="0" size="12" >
-
-            <input type="button" class="btn btn-primary"    name="" value="Calcular" size="12" onclick="calcula('+')">
 
           </div>
       </div>
